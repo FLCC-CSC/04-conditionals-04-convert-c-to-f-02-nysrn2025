@@ -1,8 +1,9 @@
 # FILE NAME - convert_C_to_F_02.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: KEVIN LEE 
+# DATE: 10/8/2025
+# BRIEF DESCRIPTION: This program converts temperatures between Celsius and Fahrenheit based on user selection
+  
 
 
 
@@ -15,7 +16,31 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+# Display menu header
+print("===== Temperature Converter =====")
+print()
 
+# Display menu options
+print("  1. Convert from Celsius to Fahrenheit")
+print("  2. Convert from Fahrenheit to Celsius")
+print()
+
+# Get user's menu choice
+choice = input("Please choose from the above menu: ")
+
+# Get temperature to convert
+temperature = float(input("Enter a temperature to convert: "))
+print()
+
+# Perform conversion based on user choice
+if choice == "1":
+    # Convert Celsius to Fahrenheit
+    fahrenheit = temperature * 9/5 + 32
+    print(f"{temperature} degrees Celsius is {fahrenheit} degrees Fahrenheit.")
+elif choice == "2":
+    # Convert Fahrenheit to Celsius
+    celsius = (temperature - 32) * 5/9
+    print(f"{temperature} degrees Fahrenheit is {celsius} degrees Celsius.")
 
 
 
@@ -93,6 +118,10 @@ Enter a temperature to convert: -40
 
 1. What is one lesson you learned in this lab?
 
+One important lesson I learned was how to create user-friendly menu systems that guide 
+the user through multiple steps. This lab taught me how to structure programs with 
+clear input prompts, handle different conversion paths using conditional statements, 
+and ensure the output format matches exactly what's expected.
 
 
 
